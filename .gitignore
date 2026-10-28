@@ -1,0 +1,8 @@
+# Ignore everything at the repository root
+/*
+
+# Track only code directory
+!/code/
+
+# Track .gitignore itself
+!/.gitignore

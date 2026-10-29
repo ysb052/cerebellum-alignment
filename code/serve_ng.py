@@ -6,7 +6,7 @@ ROOT = (
     "cerebellum_align_verified2/"
 )
 
-PORT = 8002
+PORT = 8080
 
 
 class NeuroglancerHandler(SimpleHTTPRequestHandler):

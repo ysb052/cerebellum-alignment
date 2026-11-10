@@ -5,11 +5,11 @@ SRC_IMG="file://$BASE/rendered_sift_new/img/img_rendered"
 
 CONFIG_DIR="/volume_4/research/seongbong/align/cerebellum_align_verified2/metroem_corgie_adapter/configs"
 
-PROCESSOR_SPEC="$(cat "$CONFIG_DIR/metroem_processor.yaml")"
+PROCESSOR_SPEC="$(cat "$CONFIG_DIR/metroem_processor_sm_03.yaml")"
 
 # Z 범위
 Z_START=325
-Z_END=455
+Z_END=701
 BLOCK_SIZE=40
 
 # 40 section씩 순차 실행
@@ -21,7 +21,7 @@ for ((z=$Z_START; z<$Z_END; z+=BLOCK_SIZE)); do
         end=$Z_END
     fi
 
-    DST="file://$BASE/align_block_mip8/block_${z}_${end}"
+    DST="file://$BASE/align_block_mip8_sm_03/block_${z}_${end}"
 
     echo "========================================"
     echo "Aligning z=$z to z=$((end-1))"

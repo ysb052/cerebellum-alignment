@@ -3,7 +3,7 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 
 ROOT = (
     "/volume_4/research/seongbong/align/"
-    "cerebellum_align_verified2/"
+    "Final_cerebellum_alignment/"
 )
 
 PORT = 8080
